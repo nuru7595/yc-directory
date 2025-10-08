@@ -1,7 +1,7 @@
-export default function Info() {
+export default function About() {
   return (
     <section>
-      <h2 className="section-title">Information</h2>
+      <h2 className="section-title">About</h2>
       <div className="section-container">
         <table className="w-full table-fixed">
           <tbody>
@@ -11,15 +11,19 @@ export default function Info() {
             </tr>
             <tr>
               <td>Last Modified :-</td>
-              <td>8 October 2025</td>
+              <td>9 October 2025</td>
             </tr>
             <tr>
               <td>Status :-</td>
               <td>Running...</td>
             </tr>
             <tr>
+              <td>On Going :-</td>
+              <td>7 Days</td>
+            </tr>
+            <tr>
               <td>Allocated Time :-</td>
-              <td>3 Hours 45 Minutes</td>
+              <td>4 Hours 35 Minutes</td>
             </tr>
             <tr>
               <td>Source :-</td>
