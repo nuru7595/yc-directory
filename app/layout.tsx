@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import type { Metadata } from "next";
 import "./globals.css";
-
+// fixed
 const bitcount = localFont({
   src: "./fonts/fugazOne.ttf",
   variable: "--font-fugaz",
