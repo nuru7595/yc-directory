@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const bitcount = localFont({
-  src: "/fonts/fugazOne.ttf",
+  src: "./fonts/fugazOne.ttf",
   variable: "--font-fugaz",
   display: "swap",
 });
