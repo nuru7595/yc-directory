@@ -23,7 +23,7 @@ export default function About() {
             </tr>
             <tr>
               <td>Allocated Time :-</td>
-              <td>4 Hours 35 Minutes</td>
+              <td>4 Hours 50 Minutes</td>
             </tr>
             <tr>
               <td>Source :-</td>
