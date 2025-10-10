@@ -11,7 +11,7 @@ export default function About() {
             </tr>
             <tr>
               <td>Last Modified :-</td>
-              <td>9 October 2025</td>
+              <td>10 October 2025</td>
             </tr>
             <tr>
               <td>Status :-</td>
@@ -19,11 +19,11 @@ export default function About() {
             </tr>
             <tr>
               <td>On Going :-</td>
-              <td>7 Days</td>
+              <td>8 Days</td>
             </tr>
             <tr>
               <td>Allocated Time :-</td>
-              <td>4 Hours 50 Minutes</td>
+              <td>6 Hours 33 Minutes</td>
             </tr>
             <tr>
               <td>Source :-</td>

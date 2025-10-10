@@ -3,23 +3,15 @@ import { Eye } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { Author, Startup } from "@/sanity/types";
 
-type StartupCardType = {
-  _createdAt: string;
-  views: number;
-  author: { _id: number; name: string };
-  _id: number;
-  description: string;
-  image: string;
-  category: string;
-  title: string;
-};
+export type StartupCardType = Omit<Startup, "author"> & { author?: Author };
 
 export default function StartupCard({ post }: { post: StartupCardType }) {
   const {
     _createdAt,
     views,
-    author: { _id: authorID, name },
+    author,
     _id,
     description,
     image,
@@ -38,8 +30,8 @@ export default function StartupCard({ post }: { post: StartupCardType }) {
       </div>
       <div className="flex justify-between items-center">
         <div>
-          <Link href={`/user/${authorID}`}>
-            <p className="line-clamp-1 text-sm">{name}</p>
+          <Link href={`/user/${author?._id}`}>
+            <p className="line-clamp-1 text-sm">{author?.name}</p>
           </Link>
           <Link href={`/startup/${_id}`}>
             <p className="line-clamp-1 text-xl">{title}</p>
@@ -64,7 +56,7 @@ export default function StartupCard({ post }: { post: StartupCardType }) {
         />
       </Link>
       <div className="flex justify-between items-center gap-3 mt-3">
-        <Link href={`/?query=${category.toLowerCase()}`}>
+        <Link href={`/?query=${category?.toLowerCase()}`}>
           <p>{category}</p>
         </Link>
         <Button asChild>
