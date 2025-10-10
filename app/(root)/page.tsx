@@ -2,7 +2,7 @@ import SearchForm from "@/components/SearchForm";
 import StartupCard from "@/components/StartupCard";
 
 type StartupCardType = {
-  _createdAt: string;
+  _createdAt: Date;
   views: number;
   author: { _id: number; name: string };
   _id: number;

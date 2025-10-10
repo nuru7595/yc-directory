@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 
 type StartupCardType = {
-  _createdAt: string;
+  _createdAt: Date;
   views: number;
   author: { _id: number; name: string };
   _id: number;
