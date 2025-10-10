@@ -132,7 +132,7 @@ section {
 }
 
 .section-title {
-  @apply font-bold text-center py-2 border-b-2 border-white;
+  @apply font-bold text-center py-2 border-b-2 border-pink-950;
 }
 
 .section-container {
