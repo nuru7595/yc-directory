@@ -2,7 +2,7 @@ import SearchForm from "@/components/SearchForm";
 import StartupCard from "@/components/StartupCard";
 
 type StartupCardType = {
-  _createdAt: string | Date;
+  _createdAt: string;
   views: number;
   author: { _id: number; name: string };
   _id: number;
@@ -21,7 +21,7 @@ export default async function Home({
 
   const posts = [
     {
-      _createdAt: new Date(),
+      _createdAt: new Date().toISOString(),
       views: 55,
       author: { _id: 1, name: "Adrian" },
       _id: 1,
